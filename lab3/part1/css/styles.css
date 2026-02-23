@@ -39,3 +39,12 @@ h2 {
   color: darkslategray;
   font: bold;
 }
+
+a {
+  color: green;
+}
+
+a:hover , a:focus {
+  color: darkgreen;
+  text-decoration: none;
+}
