@@ -55,7 +55,7 @@ ol {
     list-style-type:lower-roman;
 }
 
-nav ul, li {
+nav ul, nav li {
     margin: 0;
     padding-left: 0;
     list-style: none;
