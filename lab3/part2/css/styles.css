@@ -5,6 +5,10 @@
     Date: 23 February 2026
     Description: INFT1206 Lab 3 Part 2 - Typesetting a homepage
     */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 * {
     box-sizing: border-box;
 }
