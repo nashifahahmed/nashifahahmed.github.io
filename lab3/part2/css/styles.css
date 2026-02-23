@@ -55,6 +55,25 @@ ol {
     list-style-type:lower-roman;
 }
 
+nav ul, li {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav a {
+    display: block;
+    width: 100%;
+    border: 2px solid #aa6666;
+    border-radius: 10px;
+    line-height: 5;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 a:link, a:visited{
     color: #aa6666;
     text-decoration: underline;
