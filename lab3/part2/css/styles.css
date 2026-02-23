@@ -12,8 +12,18 @@ html {
     font-family: "PT Serif", serif;
 }
 
-h1, h2 {
+h1 {
     font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0;
+    letter-spacing: 1px;
 }
 
 * {
@@ -25,6 +35,12 @@ body {
     padding: 0 20px;
     min-width: 980px;
     max-width: 1400px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+section p {
+    text-indent: 2rem;
 }
 
 /* Layout */
