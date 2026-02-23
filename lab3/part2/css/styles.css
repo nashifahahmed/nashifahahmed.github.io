@@ -43,6 +43,36 @@ section p {
     text-indent: 2rem;
 }
 
+ul {
+    line-height: 1.5;
+    margin: 0 auto;
+    list-style-type: circle;
+}
+
+ol {
+    line-height: 1.5;
+    margin: 0 auto;
+    list-style-type:lower-roman;
+}
+
+a:link, a:visited{
+    color: #aa6666;
+    text-decoration: underline;
+    outline: none;
+}
+
+a:focus, a:hover {
+    color:#aa6666;
+    text-decoration: none;
+    outline: none;
+}
+
+a[href*="http"] {
+    padding-right: 12px;
+    background: no-repeat right center url("../images/external-link-52.png");
+    background-size: 10px 10px;
+}
+
 /* Layout */
 
 main {
