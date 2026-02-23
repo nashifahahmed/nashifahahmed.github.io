@@ -6,8 +6,15 @@
     Description: INFT1206 Lab 3 Part 2 - Typesetting a homepage
     */
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+html {
+    font-family: "PT Serif", serif;
+}
+
+h1, h2 {
+    font-family: "Oswald", sans-serif;
+}
 
 * {
     box-sizing: border-box;
