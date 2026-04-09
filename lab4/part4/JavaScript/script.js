@@ -97,6 +97,33 @@ class Ball extends Shape{
     }
 }
 
+// EvilCircle class (extends class Shape)
+class EvilCircle extends Shape{
+    // Constructor (param = circle position inherits from parent Shape)
+    constructor(x, y){
+        super(x, y, 20, 20);
+        this.color = "white";
+        this.size = 10;
+
+        window.addEventListener("keydown", (e) => {
+            switch (e.key) {
+                case "a":
+                    this.x -= this.velX;
+                    break;
+                case "d":
+                    this.x += this.velX;
+                    break;
+                case "w":
+                    this.y -= this.velY;
+                    break;
+                case "s":
+                    this.y += this.velY;
+                    break;
+            }
+        });
+    }
+    }
+
 
 
 const balls = [];
