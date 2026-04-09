@@ -210,9 +210,11 @@ function loop(){
     ctx.fillRect(0, 0, width, height);
 
     for(const ball of balls){
-        ball.draw();
-        ball.update();
-        ball.collisionDetect();
+        if(ball.exists){
+            ball.draw();
+            ball.update();
+            ball.collisionDetect();
+        }
     }
 
     // Evil Circle Method calls
