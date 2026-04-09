@@ -31,8 +31,6 @@ for (const image of images){
 
     newImage.alt = image.alt;
 
-    newImage.tabIndex = "0";
-
     thumbBar.appendChild(newImage);
 
     newImage.addEventListener("click", updateDisplayedImage);
