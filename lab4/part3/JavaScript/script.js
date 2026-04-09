@@ -73,8 +73,22 @@ class Ball {
     }
 }
 
-const testBall = new Ball(50, 100, 4, 4, "blue", 10);
-testBall.x;
-testBall.size;
-testBall.color;
-testBall.draw();
+const balls = [];
+
+while (balls.length < 25){
+    // Randomize ball size
+    const size = random(10, 20);
+    // Randomize ball position, colour, and size
+    const ball = new Ball(
+        random(0 + size, width - size),
+        random(0 + size, height - size),
+        random(-7, 7),
+        random(-7, 7),
+        randomRGB(),
+        size     
+    );
+
+    balls.push(ball);
+}
+
+
