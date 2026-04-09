@@ -42,5 +42,12 @@ for (const image of images){
             updateDisplayedImage(e);
         }
     });
+
+    // Function - updates main image
+    function updateDisplayedImage(e){
+        displayedImage.src = e.target.src;
+        displayedImage.alt = e.target.alt;
+    }
+
 }
 
