@@ -122,7 +122,51 @@ class EvilCircle extends Shape{
             }
         });
     }
+
+    draw(){
+        ctx.beginPath();
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = this.color;
+        ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+        ctx.stroke();
     }
+
+    checkBounds(){
+        // If the ball is going off the right edge
+        if(this.x + this.size >= width){
+            this.x -= this.size;
+        }
+
+        // If the ball is going off the left edge
+        if (this.x - this.size <= 0) {
+            this.x += this.size;
+        }
+
+        // If the ball is going off the bottom edge
+        if(this.y + this.size >= height){
+            this.y -= this.size;
+        }
+
+        // If the ball is going off the top edge
+        if(this.y - this.size <= 0){
+            this.y += this.size;
+        }    
+    }
+
+    collisionDetect(){
+        for(const ball of balls){
+            if(ball.exists){
+                const dx = this.x - ball.x;
+                const dy = this.y - ball.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                // If collision is detected
+                if(distance < this.size + ball.size){
+                    ball.exists = false;
+                }
+            }
+        }        
+    }
+}
 
 
 
