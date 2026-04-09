@@ -56,12 +56,12 @@ btn.addEventListener("click", () => {
 
     if(isDark){
         btn.textContent = "Lighten";
-        overlay.style.backgroundColour = "rgb(0 0 0 / 0.5)";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0.5)";
         btn.setAttribute("class", "light");
     }
     else{
         btn.textContent = "Darken";
-        overlay.style.backgroundColour = "rgb(0 0 0 0)";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0)";
         btn.setAttribute("class", "dark");
     }
 })
