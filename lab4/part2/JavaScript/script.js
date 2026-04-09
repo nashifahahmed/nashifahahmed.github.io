@@ -35,19 +35,35 @@ for (const image of images){
 
     thumbBar.appendChild(newImage);
 
-    newImage.addEventListener("click", updateDisplayedImage());
+    newImage.addEventListener("click", updateDisplayedImage);
 
     newImage.addEventListener("keydown", (e) => {
-        if (e.code == "Enter") {
+        if (e.code === "Enter") {
             updateDisplayedImage(e);
         }
     });
-
-    // Function - updates main image
-    function updateDisplayedImage(e){
-        displayedImage.src = e.target.src;
-        displayedImage.alt = e.target.alt;
-    }
-
 }
+
+// Function - updates main image
+function updateDisplayedImage(e){
+    displayedImage.src = e.target.src;
+    displayedImage.alt = e.target.alt;
+}
+
+// Darken / Lighten button
+btn.addEventListener("click", () => {
+    const isDark = btn.getAttribute("class") === "dark";
+
+    if(isDark){
+        btn.textContent = "Lighten";
+        overlay.style.backgroundColour = "rgb(0 0 0 / 0.5)";
+        btn.setAttribute("class", "light");
+    }
+    else{
+        btn.textContent = "Darken";
+        overlay.style.backgroundColour = "rgb(0 0 0 0)";
+        btn.setAttribute("class", "dark");
+    }
+})
+
 
