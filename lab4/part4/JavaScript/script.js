@@ -123,6 +123,7 @@ class EvilCircle extends Shape{
         });
     }
 
+    // Draw Method
     draw(){
         ctx.beginPath();
         ctx.lineWidth = 3;
@@ -131,6 +132,7 @@ class EvilCircle extends Shape{
         ctx.stroke();
     }
 
+    // Check Bounds Method (like update method in Ball class)
     checkBounds(){
         // If the ball is going off the right edge
         if(this.x + this.size >= width){
@@ -153,6 +155,7 @@ class EvilCircle extends Shape{
         }    
     }
 
+    // Collision Detect Method
     collisionDetect(){
         for(const ball of balls){
             if(ball.exists){
@@ -168,10 +171,13 @@ class EvilCircle extends Shape{
     }
 }
 
-
-
+// Array to hold every ball
 const balls = [];
 
+// Evil Circle Creation
+const evilBall = new EvilCircle(random(0, width), random(0, height));
+
+// Creates the random balls
 while (balls.length < 25){
     // Randomize ball size
     const size = random(10, 20);
@@ -198,6 +204,11 @@ function loop(){
         ball.update();
         ball.collisionDetect();
     }
+
+    // Evil Circle Method calls
+    evilBall.draw();
+    evilBall.checkBounds();
+    evilBall.collisionDetect();
 
     requestAnimationFrame(loop);
 }
