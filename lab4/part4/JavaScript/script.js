@@ -25,16 +25,25 @@ function randomRGB() {
     return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-// Ball class
-class Ball {
-    // Constructor (param = x y coordinates, velocity, color, size)
-    constructor(x, y, velX, velY, color, size){
+// Shape class
+class Shape{
+    // Constructor (param = ball position, velocity)
+    constructor(x, y, velX, velY){
         this.x = x;
         this.y = y;
         this.velX = velX;
         this.velY = velY;
+    }
+}
+
+// Ball class (extends class Shape)
+class Ball extends Shape{
+    // Constructor (param = x y coordinates, velocity, color, size)
+    constructor(x, y, velX, velY, color, size){
+        super(x, y, velX, velY);
         this.color = color;
         this.size = size;
+        this.exists = true;
     }
 
     // Draw Method
@@ -75,7 +84,7 @@ class Ball {
     // Collision detection for balls
     collisionDetect(){
         for(const ball of balls){
-            if(this !== ball){
+            if(!(this === ball) && ball.exists){
                 const dx = this.x - ball.x;
                 const dy = this.y - ball.y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
@@ -87,6 +96,8 @@ class Ball {
         }
     }
 }
+
+
 
 const balls = [];
 
