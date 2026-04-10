@@ -22,137 +22,137 @@
         if you do, we'll enter you into a prize draw where you'll have a chance
         to win prizes.
 
-        --
 
-        <h2>Facilities</h2>
+        <form action = "">
+        <div class = "form-section">
+            <h2>Facilities</h2>
 
-        <fieldset>
-        <legend>Was the porridge: </legend>
+            <fieldset>
+            <legend>Was the porridge: </legend>
 
-        <div class = "separator">
-        <input type = "radio" id = "hotPorridge" name = "porridge" value = "hot" checked>
-        <label for = "hotPorridge">Too hot?</label>
-        </div>
+            <div class = "separator">
+            <input type = "radio" id = "hotPorridge" name = "porridge" value = "hot" checked>
+            <label for = "hotPorridge">Too hot?</label>
+            </div>
 
-        <div class = "separator">
-        <input type = "radio" id = "coldPorridge" name = "porridge" value = "cold">
-        <label for = "coldPorridge">Too cold?</label>
-        </div>
+            <div class = "separator">
+            <input type = "radio" id = "coldPorridge" name = "porridge" value = "cold">
+            <label for = "coldPorridge">Too cold?</label>
+            </div>
+            
+            <div class = "separator">
+            <input type = "radio" id = "rightPorridge" name = "porridge" value = "right">
+            <label for = "rightPorridge">Just right?</label>
+            </div>       
+
         
-        <div class = "separator">
-        <input type = "radio" id = "rightPorridge" name = "porridge" value = "right">
-        <label for = "rightPorridge">Just right?</label>
-        </div>       
-        
+            <fieldset>
+            <legend>Were the beds: </legend>
 
-        <fieldset>
-        <legend>Were the beds: </legend>
+            <div class = "separator">
+            <input type = "radio" id = "hardBed" name = "bed" value = "hard" checked>
+            <label for = "hardBed">Too hard?</label>
+            </div>
 
-        <div class = "separator">
-        <input type = "radio" id = "hardBed" name = "bed" value = "hard" checked>
-        <label for = "hardBed">Too hard?</label>
+            <div class = "separator">
+            <input type = "radio" id = "softBed" name = "bed" value = "soft">
+            <label for = "softBed">Too soft?</label>
+            </div>
+            
+            <div class = "separator">
+            <input type = "radio" id = "rightBed" name = "bed" value = "right">
+            <label for = "rightBed">Just right?</label>
+            </div> 
+            </fieldset>
+
+
+            <fieldset>
+            <legend>Describe the chairs (select all you agree with): </legend>
+
+            <div class = "separator">
+            <input type = "checkbox" id = "comfyChair" name = "chair" value = "comfy">
+            <label for = "comfyChair">Comfy</label>
+            </div>
+
+            <div class = "separator">
+            <input type = "checkbox" id = "luxChair" name = "chair" value = "luxurious">
+            <label for = "luxChair">Luxurious</label>
+            </div>
+            
+            <div class = "separator">
+            <input type = "checkbox" id = "hitecChair" name = "chair" value = "hitec">
+            <label for = "hitecChair">Hi tec</label>
+            </div>
+
+            <div class = "separator">
+            <input type = "checkbox" id = "prettyChair" name = "chair" value = "pretty">
+            <label for = "prettyChair">Pretty</label>
+            </div>
+
+            <div class = "separator">
+            <input type = "checkbox" id = "majChair" name = "chair" value = "majestic">
+            <label for = "majChair">Majestic</label>
+            </div>
+        </div>         
+
+        <div class = "form-section">
+            <h2>About your hosts</h2>
+
+            <div class = "separator">
+            <label for = "favBear">Who's your favorite bear?</label>
+            <select id = "favBear" name = "favBear">
+                <option value="papa">Papa Bear</option>
+                <option value="mama">Mama Bear</option>
+                <option value="junior">Junior</option>
+                <option value="dozer">Dozer</option>
+            </select>
+            </div>
+            
+
+            <div class = "separator">
+            <label for = "greeting">Which greeting did you prefer?</label>
+            <select id = "greeting" name = "greeting">
+                <option value="wave">Wave</option>
+                <option value="friend">Friendly greeting</option>
+                <option value="growl">Growl</option>
+                <option value="claw">Claw marks in the door</option>
+            </select>
+            </div>       
         </div>
 
-        <div class = "separator">
-        <input type = "radio" id = "softBed" name = "bed" value = "soft">
-        <label for = "softBed">Too soft?</label>
-        </div>
-        
-        <div class = "separator">
-        <input type = "radio" id = "rightBed" name = "bed" value = "right">
-        <label for = "rightBed">Just right?</label>
-        </div> 
-        </fieldset>
+        <div class = "form-section">
+            <h2>Any other feedback?</h2>
 
+            <div class = "separator">
+            <label for = "comments">Give us your comments:</label><br>
+            <textarea id = "comments" name = "comments" rows = "5" cols = "30"></textarea>
+            </div>   
+        </div>     
 
-        <fieldset>
-        <legend>Describe the chairs (select all you agree with): </legend>
+        <div class = "form-section">
+            <h2>Your details</h2>
 
-        <div class = "separator">
-        <input type = "checkbox" id = "comfyChair" name = "chair" value = "comfy">
-        <label for = "comfyChair">Comfy</label>
-        </div>
+            <div class = "separator">
+            <label for = "userName">Name: </label>
+            <input type = "text" id = "userName" name = "userName">
+            </div>  
 
-        <div class = "separator">
-        <input type = "checkbox" id = "luxChair" name = "chair" value = "luxurious">
-        <label for = "luxChair">Luxurious</label>
-        </div>
-        
-        <div class = "separator">
-        <input type = "checkbox" id = "hitecChair" name = "chair" value = "hitec">
-        <label for = "hitecChair">Hi tec</label>
+            <div class = "separator">
+            <label for = "email">Email: </label>
+            <input type = "text" id = "email" name = "email">
+            </div>  
+
+            <div class = "separator">
+            <label for = "phone">Phone: </label>
+            <input type = "text" id = "phone" name = "phone">
+            </div>  
         </div>
 
-        <div class = "separator">
-        <input type = "checkbox" id = "prettyChair" name = "chair" value = "pretty">
-        <label for = "prettyChair">Pretty</label>
+        <div class = "form-section">
+            <div class = "separator">
+            <button type = "submit">Submit</button>
+            </div> 
         </div>
-
-        <div class = "separator">
-        <input type = "checkbox" id = "majChair" name = "chair" value = "majestic">
-        <label for = "majChair">Majestic</label>
-        </div>
-        
-
-
-        <h2>About your hosts</h2>
-
-        <div class = "separator">
-        <label for = "favBear">Who's your favorite bear?</label>
-        <select id = "favBear" name = "favBear">
-            <option value="papa">Papa Bear</option>
-            <option value="mama">Mama Bear</option>
-            <option value="junior">Junior</option>
-            <option value="dozer">Dozer</option>
-        </select>
-        </div>
-        
-
-        <div class = "separator">
-        <label for = "greeting">Which greeting did you prefer?</label>
-        <select id = "greeting" name = "greeting">
-            <option value="wave">Wave</option>
-            <option value="friend">Friendly greeting</option>
-            <option value="growl">Growl</option>
-            <option value="claw">Claw marks in the door</option>
-        </select>
-        </div>       
-
-
-        --
-
-        <h2>Any other feedback?</h2>
-
-        <div class = "separator">
-        <label for = "comments">Give us your comments:</label>
-        <textarea id = "comments" name = "comments" rows = "5" cols = "30"></textarea>
-        </div>   
-        
-
-        --
-
-        <h2>Your details</h2>
-
-        <div class = "separator">
-        <label for = "userName">Name: </label>
-        <input type = "text" id = "userName" name = "userName">
-        </div>  
-
-        <div class = "separator">
-        <label for = "email">Email: </label>
-        <input type = "text" id = "email" name = "email">
-        </div>  
-
-        <div class = "separator">
-        <label for = "phone">Phone: </label>
-        <input type = "text" id = "phone" name = "phone">
-        </div>  
-
-        --
-        <div class = "separator">
-        <button type = "submit">Submit</button>
-        </div>  
-
-        --
+        </form>
     </body>
 </html>
