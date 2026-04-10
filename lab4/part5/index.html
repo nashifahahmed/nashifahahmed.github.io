@@ -10,7 +10,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Forms challenge</title>
-        <link href="style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
         <script defer src="index.js"></script>
     </head>
     <body>
@@ -24,24 +24,74 @@
 
         --
 
-        Facilities
+        <h2>Facilities</h2>
 
-        Was the porridge
-        Too hot?
-        Too cold?
-        Just right?
+        <fieldset>
+        <legend>Was the porridge: </legend>
 
-        Were the beds
-        Too hard?
-        Too soft?
-        Just right?
+        <div class = "separator">
+        <input type = "radio" id = "hotPorridge" name = "porridge" value = "hot" checked>
+        <label for = "hotPorridge">Too hot?</label>
+        </div>
 
-        Describe the chairs (select all you agree with)
-        Comfy
-        Luxurious
-        Hi tec
-        Pretty
-        Majestic
+        <div class = "separator">
+        <input type = "radio" id = "coldPorridge" name = "porridge" value = "cold">
+        <label for = "coldPorridge">Too cold?</label>
+        </div>
+        
+        <div class = "separator">
+        <input type = "radio" id = "rightPorridge" name = "porridge" value = "right">
+        <label for = "rightPorridge">Just right?</label>
+        </div>       
+        
+        
+        <fieldset>
+        <legend>Were the beds: </legend>
+
+        <div class = "separator">
+        <input type = "radio" id = "hardBed" name = "bed" value = "hard" checked>
+        <label for = "hardBed">Too hard?</label>
+        </div>
+
+        <div class = "separator">
+        <input type = "radio" id = "softBed" name = "bed" value = "soft">
+        <label for = "softBed">Too soft?</label>
+        </div>
+        
+        <div class = "separator">
+        <input type = "radio" id = "rightBed" name = "bed" value = "right">
+        <label for = "rightBed">Just right?</label>
+        </div> 
+        </fieldset>
+
+        <fieldset>
+        <legend>Describe the chairs (select all you agree with): </legend>
+
+        <div class = "separator">
+        <input type = "checkbox" id = "comfyChair" name = "chair" value = "comfy">
+        <label for = "comfyChair">Comfy</label>
+        </div>
+
+        <div class = "separator">
+        <input type = "checkbox" id = "luxChair" name = "chair" value = "luxurious">
+        <label for = "luxChair">Luxurious</label>
+        </div>
+        
+        <div class = "separator">
+        <input type = "checkbox" id = "hitecChair" name = "chair" value = "hitec">
+        <label for = "hitecChair">Hi tec</label>
+        </div>
+
+        <div class = "separator">
+        <input type = "checkbox" id = "prettyChair" name = "chair" value = "pretty">
+        <label for = "prettyChair">Pretty</label>
+        </div>
+
+        <div class = "separator">
+        <input type = "checkbox" id = "majChair" name = "chair" value = "majestic">
+        <label for = "majChair">Majestic</label>
+        </div>
+        
 
         --
 
